@@ -13,12 +13,15 @@
 @import './ucf-athena-framework/src/scss/mixins';
 
 // import any other third-party styles here
-// ...
-
 
 //
 // Project-specific styles and overrides
 //
 
-// Add/import your theme's custom styles here
-// ...
+@import 'menu'; // CSS for the multi-column menu
+
+// Optional header gradient fix included since a lot of people mention they find it difficult to read...
+
+// .header-gradient {
+//     background-image: linear-gradient(to bottom,rgba(0,0,0,1) 0, rgba(0,0,0,0.3) 65%, transparent 100%) !important;
+// }

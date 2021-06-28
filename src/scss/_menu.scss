@@ -1,0 +1,134 @@
+/* Colors */
+$grey: #cccccc;
+$white: #ffffff;
+$black: #222222;
+
+@media screen and (max-width: 991px) {
+
+    .navbar-inverse {
+        .navbar-nav.multi-column {
+
+            // Decrease navbar padding on mobile to avoid unsightly spacing
+            padding: 0 15px;
+
+            .nav-item {
+                .com-dropdown {
+                    display: none; // on mobile, hide by default
+                }
+                &.show {
+                    .com-dropdown {
+                        display: block;
+
+                        .com-submenu-header {
+                            > a:first-child {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .navbar-inverse {
+
+        #header-menu {
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            margin: 0;
+            height: 100%;
+
+            .nav-item {
+                &.dropdown {
+                    position: inherit;
+                }
+
+                .com-dropdown {
+
+                    // THEME NOTE:
+                    // If only a small number of columns will be used, 75% width will have less empty space
+                    // width: 75%;
+                    width: 100%;
+                    right: -9999px;
+                    position: absolute;
+                    margin: 0 auto;
+                    z-index: 997;
+                    background: #fff;
+                    overflow: auto;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px 50px;
+                    font-size: .9em;
+                    border-bottom: 1px solid $black;
+                    border-right: 1px solid $black;
+                    border-left: 1px solid $black;
+
+
+                    .com-submenu-header {
+                        // THEME NOTE:
+                        // For long page titles or where only 2 columns are used, flex works better to allow other columns to shift and accomodate
+                        //
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 25%;
+
+                        // Original COM values:
+                        // float: left;
+                        // width: 33%;
+                        overflow: auto;
+
+                        a:first-child {
+                            font-weight: bold;
+                        }
+
+                        .dropdown-item {
+                            padding: .5em;
+                        }
+
+                        .com-dropdown {
+                            position: relative;
+                            display: block;
+                            top: 0;
+                            width: 100%;
+                            padding: 0;
+                            border: none;
+
+                            a:first-child {
+                            font-weight: normal;
+                        }
+                        }
+                    }
+                }
+
+                &.show {
+
+                    .nav-link {
+                        background-color: $white;
+                        color: $black;
+                    }
+
+                    .com-dropdown {
+                        right: 0;
+                        top: 100%;
+                    }
+                }
+            }
+
+            .dropdown.show {
+                .dropdown-toggle {
+                    &:after {
+                        border-top-color: $black !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
