@@ -1,6 +1,6 @@
 # UCF WordPress Multicolumn Child Theme
 
-{{Brief description of this theme}}.  Built as a child theme of the [UCF WordPress Theme](https://github.com/UCF/UCF-WordPress-Theme), using the [Athena Framework](https://ucf.github.io/Athena-Framework/).
+This theme adds a multi-column dropdown menu to replace the standard single-column dropdown.  Built as a child theme of the [UCF WordPress Theme](https://github.com/UCF/UCF-WordPress-Theme), using the [Athena Framework](https://ucf.github.io/Athena-Framework/).
 
 ## Quick links
 
