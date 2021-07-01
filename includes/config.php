@@ -2,11 +2,11 @@
 /**
  * Handle all theme configuration here
  **/
-namespace MyProject\Theme\Includes\Config;
+namespace MULTICOLUMN\Theme\Includes\Config;
 
 
-define( 'MYPROJECT_THEME_URL', get_stylesheet_directory_uri() );
-define( 'MYPROJECT_THEME_STATIC_URL', MYPROJECT_THEME_URL . '/static' );
-define( 'MYPROJECT_THEME_CSS_URL', MYPROJECT_THEME_STATIC_URL . '/css' );
-define( 'MYPROJECT_THEME_JS_URL', MYPROJECT_THEME_STATIC_URL . '/js' );
-define( 'MYPROJECT_THEME_IMG_URL', MYPROJECT_THEME_STATIC_URL . '/img' );
+define( 'MULTICOLUMN_THEME_URL', get_stylesheet_directory_uri() );
+define( 'MULTICOLUMN_THEME_STATIC_URL', MULTICOLUMN_THEME_URL . '/static' );
+define( 'MULTICOLUMN_THEME_CSS_URL', MULTICOLUMN_THEME_STATIC_URL . '/css' );
+define( 'MULTICOLUMN_THEME_JS_URL', MULTICOLUMN_THEME_STATIC_URL . '/js' );
+define( 'MULTICOLUMN_THEME_IMG_URL', MULTICOLUMN_THEME_STATIC_URL . '/img' );

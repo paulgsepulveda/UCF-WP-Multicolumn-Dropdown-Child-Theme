@@ -3,6 +3,18 @@ $grey: #cccccc;
 $white: #ffffff;
 $black: #222222;
 
+@media screen and (max-width: 999px) {
+
+	main {
+		.nav {
+			width: 100%;
+		    clear: both;
+		    float: none;
+		    margin: 0;
+		}
+	}
+}
+
 @media screen and (max-width: 991px) {
 
     .navbar-inverse {
@@ -48,18 +60,14 @@ $black: #222222;
                 }
 
                 .com-dropdown {
-
-                    // THEME NOTE:
-                    // If only a small number of columns will be used, 75% width will have less empty space
-                    // width: 75%;
                     width: 100%;
-                    right: -9999px;
+                    left: -9999px;
                     position: absolute;
                     margin: 0 auto;
                     z-index: 997;
                     background: #fff;
                     overflow: auto;
-                    display: flex;
+                    display: inline-flex;
                     flex-direction: row;
                     padding: 10px 50px;
                     font-size: .9em;
@@ -80,7 +88,7 @@ $black: #222222;
                         // Original COM values:
                         // float: left;
                         // width: 33%;
-                        overflow: auto;
+                        // overflow: auto;
 
                         a:first-child {
                             font-weight: bold;
@@ -113,7 +121,7 @@ $black: #222222;
                     }
 
                     .com-dropdown {
-                        right: 0;
+                        left: 0;
                         top: 100%;
                     }
                 }
